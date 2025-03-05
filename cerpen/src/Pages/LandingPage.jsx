@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Cover from "../assets/Cover.jpg";
-export default function LandingPage() {
+export default function LandingPage({ goToStory }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-300 to-orange-300 p-6 ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -20,15 +20,15 @@ export default function LandingPage() {
             Sebuah cerita pendek karya Veronica Selmi Aurenscy yang mengungkap
             perjalanan personal dan pemberdayaan diri.
           </p>
-          <Link
-            to="/story"
+          <button
+            onClick={goToStory}
             className="inline-block bg-gradient-to-r from-teal-500 to-orange-500 
             text-white px-8 py-3 rounded-full 
             transform transition-transform hover:scale-105 
             shadow-lg hover:shadow-xl"
           >
             Baca Cerita
-          </Link>
+          </button>
         </div>
       </div>
     </div>

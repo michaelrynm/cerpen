@@ -5,18 +5,16 @@ import {
 } from "react-router-dom";
 import LandingPage from "../Pages/LandingPage.jsx";
 import Story from "../Pages/Story.jsx";
-import FlipPage from "../Pages/FlipPage.jsx";
-
+import FlipBookNavigation from "../Pages/FlipbookNavigations.jsx";
 export default function Router() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <LandingPage />,
+      element: <FlipBookNavigation />,
     },
-
     {
-      path: "/story",
-      element: <Story />,
+      path: "*",
+      element: <Navigate to="/" />,
     },
   ]);
   return <RouterProvider router={router} />;
