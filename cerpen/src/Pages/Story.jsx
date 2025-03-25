@@ -101,11 +101,11 @@ export default function Story() {
               className="w-48 rounded-xl shadow-md hover:scale-105 transition-transform"
             />
             <div>
-              <h2 className="text-3xl font-bold mb-2 italic">
+              <h2 className="text-2xl md:text-2xl lg:text-4xl font-bold mb-2 italic text-center">
                 My Body My Rules
               </h2>
               <p
-                className={`
+                className={`text-center text-sm md:text-base
                 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}
               `}
               >
@@ -192,6 +192,22 @@ export default function Story() {
                 bersembunyi dari dunia luar, dan melupakan segala hal yang telah
                 ia perjuangkan.
               </p>
+              <p>
+                Kondisi Resi semakin memburuk. Wajahnya penuh jerawat dan
+                kulitnya terlihat lebih kusam dari sebelumnya. Tubuhnya menjadi
+                sangat lemas, dan ia sering kali merasa mual. Sering kali, ia
+                menangis sendirian di kamar, memikirkan bagaimana ia bisa
+                berubah menjadi cantik dan langsing, seperti yang ia impikan
+                selama ini. Suatu hari, setelah seminggu penuh mengurung diri di
+                kamar, ibu Resi yaitu Bu Dewi, mulai merasa khawatir. Ia
+                memperhatikan bahwa anak perempuannya tidak lagi ceria seperti
+                dulu. Resi sering kali mengunci diri di kamar dan jarang keluar.
+                Bahkan saat makan, ia hanya menghabiskan sedikit makanan dan
+                menolak untuk berbicara banyak. Bu Dewi tahu ada yang tidak
+                beres dengan putrinya. Akhirnya, Bu Dewi meminta bantuan Putri
+                yaitu sahabat dekat Resi, untuk mencari tahu apa yang sebenarnya
+                terjadi.
+              </p>
               <div className="lg:flex justify-center gap-3">
                 <img src={image1} alt="" className="w-64" />
                 <p>
@@ -211,22 +227,7 @@ export default function Story() {
                   dari keterpurukannya.
                 </p>
               </div>
-              <p>
-                Kondisi Resi semakin memburuk. Wajahnya penuh jerawat dan
-                kulitnya terlihat lebih kusam dari sebelumnya. Tubuhnya menjadi
-                sangat lemas, dan ia sering kali merasa mual. Sering kali, ia
-                menangis sendirian di kamar, memikirkan bagaimana ia bisa
-                berubah menjadi cantik dan langsing, seperti yang ia impikan
-                selama ini. Suatu hari, setelah seminggu penuh mengurung diri di
-                kamar, ibu Resi yaitu Bu Dewi, mulai merasa khawatir. Ia
-                memperhatikan bahwa anak perempuannya tidak lagi ceria seperti
-                dulu. Resi sering kali mengunci diri di kamar dan jarang keluar.
-                Bahkan saat makan, ia hanya menghabiskan sedikit makanan dan
-                menolak untuk berbicara banyak. Bu Dewi tahu ada yang tidak
-                beres dengan putrinya. Akhirnya, Bu Dewi meminta bantuan Putri
-                yaitu sahabat dekat Resi, untuk mencari tahu apa yang sebenarnya
-                terjadi.
-              </p>
+
               <div className="flex flex-col lg:flex-row justify-center gap-3">
                 <p>
                   Bu Dewi mencari Resi yang sedang bersembunyi di kamar. Ia
