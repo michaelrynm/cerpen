@@ -228,7 +228,7 @@ export default function Story() {
                 </p>
               </div>
 
-              <div className="flex flex-col lg:flex-row justify-center gap-3">
+              <div className="flex flex-col-reverse lg:flex-row justify-center gap-3">
                 <p>
                   Bu Dewi mencari Resi yang sedang bersembunyi di kamar. Ia
                   duduk di sampingnya, dengan penuh kasih sayang. "Resi, Ibu

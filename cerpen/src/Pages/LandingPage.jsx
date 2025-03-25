@@ -13,9 +13,14 @@ export default function LandingPage({ goToStory }) {
         </div>
 
         <div className="space-y-6 text-center md:text-left order-1 md:order-2">
-          <h1 className="text-4xl md:text-7xl font-bold text-gray-800 hover:tracking-wider transition-all ease-in-out duration-300 italic">
-            My Body My Rules
-          </h1>
+          <div className="flex flex-col lg:flex-row gap-3">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 hover:tracking-wider transition-all ease-in-out duration-300 italic">
+              My Body
+            </h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 hover:tracking-wider transition-all ease-in-out duration-300 italic">
+              My Rules
+            </h1>
+          </div>
           <p className="text-gray-600 max-w-md mx-auto md:mx-0">
             Sebuah cerita pendek karya Veronica Selmi Aurenscy yang mengungkap
             perjalanan personal dan pemberdayaan diri.
