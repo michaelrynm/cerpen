@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Cover from "../assets/Cover.jpg";
 import { BookOpen, Sun, Moon, Share2, Heart } from "lucide-react";
+import image1 from "../assets/Picture1.jpg";
+import image2 from "../assets/Picture2.jpg";
+import image3 from "../assets/Picture3.jpg";
 
 export default function Story() {
   const [theme, setTheme] = useState("light");
@@ -56,7 +59,7 @@ export default function Story() {
         <div className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center space-x-4">
             <BookOpen className="w-6 h-6" />
-            <h1 className="text-xl font-bold">My Body My Rules</h1>
+            <h1 className="text-xl font-bold italic">My Body My Rules</h1>
           </div>
           <div className="flex items-center space-x-4">
             <button
@@ -98,7 +101,9 @@ export default function Story() {
               className="w-48 rounded-xl shadow-md hover:scale-105 transition-transform"
             />
             <div>
-              <h2 className="text-3xl font-bold mb-2">My Body My Rules</h2>
+              <h2 className="text-3xl font-bold mb-2 italic">
+                My Body My Rules
+              </h2>
               <p
                 className={`
                 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}
@@ -187,6 +192,25 @@ export default function Story() {
                 bersembunyi dari dunia luar, dan melupakan segala hal yang telah
                 ia perjuangkan.
               </p>
+              <div className="lg:flex justify-center gap-3">
+                <img src={image1} alt="" className="w-64" />
+                <p>
+                  "Putri, ada apa dengan Resi? Aku khawatir. Dia nggak seperti
+                  biasanya," tanya Bu Dewi dengan penuh perhatian. Putri yang
+                  sangat mengerti perasaan Resi, dengan sabar menceritakan apa
+                  yang telah terjadi. Ia mengatakan bahwa Resi merasa tidak
+                  percaya diri dengan penampilannya dan berusaha untuk berubah
+                  menjadi seperti selebgram yang selalu ia lihat di media
+                  sosial. "Dia merasa dirinya jelek, Bu. Dia ingin mendapatkan
+                  tubuh langsing dan wajah putih seperti yang dia lihat di
+                  Instagram," kata Putri dengan penuh kepedulian. Mendengar
+                  penjelasan Putri, Bu Dewi merasa sangat sedih. Ia tahu bahwa
+                  putrinya adalah seorang gadis yang cantik, namun perasaan
+                  rendah diri itu telah meracuni pikirannya. Bu Dewi merasa
+                  bahwa sudah saatnya ia bertindak untuk membantu Resi keluar
+                  dari keterpurukannya.
+                </p>
+              </div>
               <p>
                 Kondisi Resi semakin memburuk. Wajahnya penuh jerawat dan
                 kulitnya terlihat lebih kusam dari sebelumnya. Tubuhnya menjadi
@@ -201,39 +225,32 @@ export default function Story() {
                 menolak untuk berbicara banyak. Bu Dewi tahu ada yang tidak
                 beres dengan putrinya. Akhirnya, Bu Dewi meminta bantuan Putri
                 yaitu sahabat dekat Resi, untuk mencari tahu apa yang sebenarnya
-                terjadi. "Putri, ada apa dengan Resi? Aku khawatir. Dia nggak
-                seperti biasanya," tanya Bu Dewi dengan penuh perhatian. Putri
-                yang sangat mengerti perasaan Resi, dengan sabar menceritakan
-                apa yang telah terjadi. Ia mengatakan bahwa Resi merasa tidak
-                percaya diri dengan penampilannya dan berusaha untuk berubah
-                menjadi seperti selebgram yang selalu ia lihat di media sosial.
-                "Dia merasa dirinya jelek, Bu. Dia ingin mendapatkan tubuh
-                langsing dan wajah putih seperti yang dia lihat di Instagram,"
-                kata Putri dengan penuh kepedulian. Mendengar penjelasan Putri,
-                Bu Dewi merasa sangat sedih. Ia tahu bahwa putrinya adalah
-                seorang gadis yang cantik, namun perasaan rendah diri itu telah
-                meracuni pikirannya. Bu Dewi merasa bahwa sudah saatnya ia
-                bertindak untuk membantu Resi keluar dari keterpurukannya.
+                terjadi.
               </p>
-              <p>
-                Bu Dewi mencari Resi yang sedang bersembunyi di kamar. Ia duduk
-                di sampingnya, dengan penuh kasih sayang, memeluknya erat.
-                "Resi, Ibu tahu kamu merasa sangat tertekan, tapi percayalah,
-                kamu tidak perlu menjadi seperti orang lain. Kamu sudah cantik
-                dengan cara kamu sendiri." Resi, yang sudah hampir tidak bisa
-                menahan air matanya, mulai menangis di pelukan ibunya. "Tapi,
-                Bu, aku nggak seperti mereka. Aku merasa jelek, aku merasa nggak
-                cukup baik." Bu Dewi mengelus kepala Resi dan berkata dengan
-                lembut, "Kecantikan sejati bukanlah soal bentuk tubuh atau kulit
-                yang sempurna, tapi tentang bagaimana kamu menerima dirimu
-                sendiri. Tidak ada yang bisa mengubah siapa kamu kecuali dirimu
-                sendiri. Jangan terjebak dalam standar kecantikan yang
-                ditentukan oleh orang lain."Dengan kata-kata ibunya yang penuh
-                kasih, Resi mulai menyadari kesalahannya. Ia tidak perlu
-                membandingkan dirinya dengan orang lain. Ia mulai mengerti bahwa
-                yang paling penting adalah menjadi diri sendiri, mencintai
-                tubuhnya, dan bersyukur atas apa yang telah diberikan kepadanya.
-              </p>
+              <div className="flex flex-col lg:flex-row justify-center gap-3">
+                <p>
+                  Bu Dewi mencari Resi yang sedang bersembunyi di kamar. Ia
+                  duduk di sampingnya, dengan penuh kasih sayang. "Resi, Ibu
+                  tahu kamu merasa sangat tertekan, tapi percayalah, kamu tidak
+                  perlu menjadi seperti orang lain. Kamu sudah cantik dengan
+                  cara kamu sendiri." Resi, yang sudah hampir tidak bisa menahan
+                  air matanya, mulai menangis di pelukan ibunya. "Tapi, Bu, aku
+                  nggak seperti mereka. Aku merasa jelek, aku merasa nggak cukup
+                  baik." Bu Dewi mengelus kepala Resi dan berkata dengan lembut,
+                  "Kecantikan sejati bukanlah soal bentuk tubuh atau kulit yang
+                  sempurna, tapi tentang bagaimana kamu menerima dirimu sendiri.
+                  Tidak ada yang bisa mengubah siapa kamu kecuali dirimu
+                  sendiri. Jangan terjebak dalam standar kecantikan yang
+                  ditentukan oleh orang lain."Dengan kata-kata ibunya yang penuh
+                  kasih, Resi mulai menyadari kesalahannya. Ia tidak perlu
+                  membandingkan dirinya dengan orang lain. Ia mulai mengerti
+                  bahwa yang paling penting adalah menjadi diri sendiri,
+                  mencintai tubuhnya, dan bersyukur atas apa yang telah
+                  diberikan kepadanya.
+                </p>
+                <img src={image2} alt="" className="w-64" />
+              </div>
+
               <p>
                 Setelah percakapan itu, Resi memutuskan untuk berhenti mengejar
                 citra tubuh yang tidak realistis. Ia mulai mencari informasi
@@ -255,20 +272,26 @@ export default function Story() {
                 menggunakan serum yang mengandung aha bha di malam hari seminggu
                 3 kali. Ditambah lagi Resi mengonsumsi minum air putih kurang
                 lebih 2 liter perhari dan makanan yang berbentuk sayuran serta
-                buah. Dari situ pelan-pelan, Resi mulai merasa lebih baik.
-                Tubuhnya tidak menjadi langsing seperti yang ia inginkan, tetapi
-                ia merasa lebih sehat. Kulit wajahnya pun mulai membaik,
-                meskipun tidak mulus sempurna, namun jauh lebih baik daripada
-                sebelumnya. Ia sadar bahwa yang paling penting adalah menjaga
-                kesehatan dan merawat diri dengan cara yang benar, bukan
-                mengejar kecantikan yang sementara. Resi belajar untuk menerima
-                dirinya apa adanya. Ia tidak lagi terobsesi dengan standar
-                kecantikan orang lain. Sebaliknya, ia merasa bangga dengan siapa
-                dirinya, karena kini ia tahu bahwa yang paling penting adalah
-                bisa menerima diri sendiri. Akhirnya Ia bertekad untuk menjadi
-                versi terbaik dari dirinya sendiri, dengan cara yang sehat dan
-                penuh rasa syukur.
+                buah.
               </p>
+              <div className="lg:flex justify-center gap-3">
+                <img src={image3} alt="" className="w-64" />
+                <p>
+                  Dari situ pelan-pelan, Resi mulai merasa lebih baik. Tubuhnya
+                  tidak menjadi langsing seperti yang ia inginkan, tetapi ia
+                  merasa lebih sehat. Kulit wajahnya pun mulai membaik, meskipun
+                  tidak mulus sempurna, namun jauh lebih baik daripada
+                  sebelumnya. Ia sadar bahwa yang paling penting adalah menjaga
+                  kesehatan dan merawat diri dengan cara yang benar, bukan
+                  mengejar kecantikan yang sementara. Resi belajar untuk
+                  menerima dirinya apa adanya. Ia tidak lagi terobsesi dengan
+                  standar kecantikan orang lain. Sebaliknya, ia merasa bangga
+                  dengan siapa dirinya, karena kini ia tahu bahwa yang paling
+                  penting adalah bisa menerima diri sendiri. Akhirnya Ia
+                  bertekad untuk menjadi versi terbaik dari dirinya sendiri,
+                  dengan cara yang sehat dan penuh rasa syukur.
+                </p>
+              </div>
             </div>
           </div>
         </div>

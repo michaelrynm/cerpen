@@ -13,7 +13,7 @@ export default function LandingPage({ goToStory }) {
         </div>
 
         <div className="space-y-6 text-center md:text-left order-1 md:order-2">
-          <h1 className="text-7xl font-bold text-gray-800 hover:tracking-wider transition-all ease-in-out duration-300">
+          <h1 className="text-7xl font-bold text-gray-800 hover:tracking-wider transition-all ease-in-out duration-300 italic">
             My Body My Rules
           </h1>
           <p className="text-gray-600 max-w-md mx-auto md:mx-0">
